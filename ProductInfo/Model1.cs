@@ -1,3 +1,4 @@
+// meow
 using System;
 using System.Data.Entity;
 using System.Linq;
@@ -35,6 +36,7 @@ namespace ProductInfo
         public string ShipDate { get; set; }
         public string Location { get; set; }
         public decimal Price { get; set; }
+        public bool Deleted { get; set; }
 
     }
 }

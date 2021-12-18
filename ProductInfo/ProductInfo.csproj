@@ -61,8 +61,13 @@
     <Compile Include="Migrations\202112180207459_definefinalstructure.designer.cs">
       <DependentUpon>202112180207459_definefinalstructure.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112180313337_adddeletedrow.cs" />
+    <Compile Include="Migrations\202112180313337_adddeletedrow.designer.cs">
+      <DependentUpon>202112180313337_adddeletedrow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model1.cs" />
+    <Compile Include="ModelDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -75,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202112180207459_definefinalstructure.resx">
       <DependentUpon>202112180207459_definefinalstructure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112180313337_adddeletedrow.resx">
+      <DependentUpon>202112180313337_adddeletedrow.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
