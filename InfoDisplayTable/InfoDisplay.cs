@@ -135,7 +135,14 @@ namespace InfoDisplayTable
             myEntitiesDataGridView.ClearSelection();
            
         }
-        private bool Confirm(string message, string title="Confirm", bool yesNo=true) 
+
+		private void searchBox_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyCode == Keys.Enter) {
+                // todo
+			}
+		}
+
+		private bool Confirm(string message, string title="Confirm", bool yesNo=true) 
         {
             DialogResult result = MessageBox.Show(message, title, (yesNo == true) ? MessageBoxButtons.YesNo : MessageBoxButtons.OKCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) ;
             return (result == DialogResult.OK || result == DialogResult.Yes);
